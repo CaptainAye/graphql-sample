@@ -1,0 +1,13 @@
+type Departure{
+    id: ID!
+    destination  : String!
+    arrival_time : Float!
+    airline : String!
+    aircraft_make : String
+    aircraft_model : String
+    terminal : String!
+}
+
+type Query {
+    findAllDepartures: [Departure]
+}
